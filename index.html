@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>TylerBishop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image:url(Images/background1.jpg);
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactMe">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1>Software Engineer</h1>
+            <p>Back end developer - Python, Java, Javascript, Typescript, SQL, HTML/CSS</p>
+        </div>
+    </section>
+
+    
+    </div>
+    <!---About me---->
+    <section class="aboutMe">
+        <div class="aboutMe-row" >
+            <div class="aboutMe-col">
+                <h1 id="aboutMe">About Me</h1>
+                <h3>Hi, my name is Tyler Bishop. Welcome to my portfolio website!</h3>
+                <p>I am a recently graduated Juinor Software Engineer. I studied Computer Science and Cyber Security at Arapahoe Community College. For over a decade now, I've been creating programs as a hobby while also helping people build and fix their Computers.
+                I've always been interested in technology and my goal is to one day help create a project that'll improve the quality of life for everyone around the world.
+                </p>
+            </div>
+        </div>
+    
+    </section>
+
+    <!---Projects---->
+    <section class="projects">
+        <div class="projects-row" >
+            <div class="projects-col">
+                <h1 id="projects">Projects</h1>
+            </div>
+        </div>
+     
+    </section>
+    <!---Image Slider--->
+    <div class="slider">
+        <div class="slides">
+            <!---Slide bottons--->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!---Slide Images--->
+            <div class="slide first">
+                <a href="https://github.com/TylerB998" target="_blank">
+                    <img src="Images/ImageSlider/Slide1.png" alt="">
+                </a>
+            </div>
+            <div class="slide"> 
+                <a href="https://github.com/TylerB998/myDiscordProject" target="_blank">
+                    <img src="Images/ImageSlider/1.png" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://github.com/TylerB998/RPGTurnBasedGame" target="_blank">
+                    <img src="Images/ImageSlider/2.png" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://github.com/TylerB998/PegboardGame" target="_blank">
+                    <img src="Images/ImageSlider/3.png" alt="">
+                </a>
+            </div>
+
+            <!---Manual Navigation Start--->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+           
+
+
+
+        </div>
+
+
+        
+
+
+
+        <!---Contact--->
+        <section class="contactMe">
+            <div class="contactMe-box" >
+                <form>
+                <h1 id="contactMe">Contact</h1>
+                <h3>To contact me just fill out this form by entering in your name, your email, your subject, and your message or call me at 720-501-7972.</h3>
+                <input type="text" class="input-field" placeholder="Your Name">
+                <input type="email" class="input-field" placeholder="Your Email">
+                <input type="text" class="input-field" placeholder="Subject">
+                <textarea type="text" class="input-field textarea-field" placeholder="Your message">
+                </textarea>
+                <button onclick="sendMail(); " class="btn">Send Message</button>
+                </form>
+
+                <script>
+                    function sendMail() {
+                        var link = "mailto:tbishop98@hotmail.com"
+                                + "?cc=tbishop98@hotmail.com"
+                                + "&subject=" + encodeURIComponent("This is my subject")
+                                + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+                        ;
+                        
+                        window.location.href = link;
+                    }
+                </script>
+            </div>
+        </section>
+
+</body>
+</html>
+<!---If you wish to contact me you can do so through Email, Call, or Text and I'll respond as quickly as possible.</h3>
+<p>Email: Tbishop98@hotmail.com--->
