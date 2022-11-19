@@ -141,24 +141,12 @@
                 <div class="contactMe-box" >
                     <h1 id="contactMe">Contact</h1>
                     <h3>To contact me just fill out this form by entering in your name, your email, your subject, and your message or call me at 720-501-7972.</h3>
-                    <input type="text" class="input-field" placeholder="Your Name">
-                    <input type="email" class="input-field" placeholder="Your Email">
-                    <input type="text" class="input-field" placeholder="Subject">
+                    <input type="text" class="input-field" placeholder="Your Name" required>
+                    <input type="email" class="input-field" placeholder="Your Email" required>
+                    <input type="text" class="input-field" placeholder="Subject" required>
                     <textarea type="text" class="input-field textarea-field" placeholder="Your message">
                     </textarea>
-                    <button onclick="sendMail(); " class="btn">Send Message</button>
-
-                    <!---<script>
-                        function sendMail() {
-                            var link = "mailto:tbishop98@hotmail.com"
-                                    + "?cc=tbishop98@hotmail.com"
-                                    + "&subject=" + encodeURIComponent("This is my subject")
-                                    + "&body=" + encodeURIComponent(document.getElementById('myText').value)
-                            ;
-                            
-                            window.location.href = link;
-                        }
-                    </script>--->
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
                 </div>
             </form>    
         </section>
