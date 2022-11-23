@@ -137,16 +137,21 @@
 
         <!---Contact--->
         <section class="contactMe">
-            <form action="https://formsubmit.co/tbishop98@hotmail.com" method="POST" />
+            <form target="_blank" action="https://formsubmit.co/tbishop98@hotmail.com" method="POST" />
                 <div class="contactMe-box" >
                     <h1 id="contactMe">Contact</h1>
-                    <h3>To contact me just fill out this form by entering in your name, your email, your subject, and your message or call me at 720-501-7972.</h3>
-                    <input type="text" class="input-field" placeholder="Your Name" required>
-                    <input type="email" class="input-field" placeholder="Your Email" required>
-                    <input type="text" class="input-field" placeholder="Subject" required>
-                    <textarea type="text" class="input-field textarea-field" placeholder="Your message">
-                    </textarea>
-                    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
+                    <div class="form-group">
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                          </div>
+                          <div class="col">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                          </div>
+                        </div>
+                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                    </div>
                 </div>
             </form>    
         </section>
